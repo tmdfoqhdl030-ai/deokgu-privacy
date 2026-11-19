@@ -1,0 +1,467 @@
+<title>Deokgu Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+  :root {
+    --ground:   #F2F5F4;
+    --surface:  #FFFFFF;
+    --raised:   #E9EFED;
+    --ink:      #1C2624;
+    --muted:    #5E6E6A;
+    --rule:     #D6DEDB;
+    --accent:   #B06E14;
+    --accent-bg:#FBF0DC;
+    --flag:     #8A4B2A;
+    --flag-bg:  #FBEBE2;
+
+    --display: "Archivo", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --body: "Source Serif 4", ui-serif, Georgia, "Times New Roman", serif;
+
+    --measure: 68ch;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:   #121816;
+      --surface:  #1A2220;
+      --raised:   #222C29;
+      --ink:      #E6EDEA;
+      --muted:    #98A7A2;
+      --rule:     #2E3A37;
+      --accent:   #F0B455;
+      --accent-bg:#2A2318;
+      --flag:     #F0A57E;
+      --flag-bg:  #2E1F18;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:   #121816;
+    --surface:  #1A2220;
+    --raised:   #222C29;
+    --ink:      #E6EDEA;
+    --muted:    #98A7A2;
+    --rule:     #2E3A37;
+    --accent:   #F0B455;
+    --accent-bg:#2A2318;
+    --flag:     #F0A57E;
+    --flag-bg:  #2E1F18;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: clamp(2rem, 6vw, 4.5rem) clamp(1.25rem, 5vw, 2rem) 5rem;
+  }
+
+  /* ── Masthead ─────────────────────────────────────────── */
+
+  header { display: flex; flex-direction: column; gap: 0.9rem; }
+
+  .eyebrow {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(2rem, 6vw, 2.9rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .dateline {
+    font-family: var(--display);
+    font-size: 0.875rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
+  }
+
+  .rule-heavy {
+    border: 0;
+    border-top: 2px solid var(--ink);
+    margin: 2rem 0 0;
+  }
+
+  /* ── At a glance ──────────────────────────────────────── */
+
+  .glance {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: clamp(1.25rem, 4vw, 1.75rem);
+    margin: 2.5rem 0 0;
+  }
+
+  .glance h2 {
+    font-family: var(--display);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 1.1rem;
+  }
+
+  .facts { display: grid; gap: 0.85rem; margin: 0; }
+
+  .fact {
+    display: grid;
+    grid-template-columns: 1.35rem 1fr;
+    gap: 0.75rem;
+    align-items: start;
+  }
+
+  .mark {
+    font-family: var(--display);
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--accent);
+  }
+
+  .fact p { margin: 0; }
+
+  /* ── Sections ─────────────────────────────────────────── */
+
+  section { margin-top: 3rem; }
+
+  h2.sec {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0 0 0.85rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+  }
+
+  .num {
+    font-family: var(--display);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    flex: none;
+  }
+
+  h3 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 1.75rem 0 0.5rem;
+  }
+
+  p { margin: 0 0 1rem; }
+  section p:last-child, li p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+  li { margin-bottom: 0.5rem; }
+  li::marker { color: var(--muted); }
+
+  strong { font-weight: 600; }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+    font-size: 0.875em;
+    background: var(--raised);
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+  }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  /* ── Callout for what DOES leave the device ── */
+
+  .callout {
+    background: var(--flag-bg);
+    border-left: 3px solid var(--flag);
+    border-radius: 0 4px 4px 0;
+    padding: 1.1rem 1.25rem;
+    margin: 1.25rem 0;
+  }
+
+  .callout .label {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--flag);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  /* ── Data table ───────────────────────────────────────── */
+
+  .table-scroll { overflow-x: auto; margin: 1.25rem 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--display);
+    font-size: 0.9rem;
+    min-width: 30rem;
+  }
+
+  th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 0 0.9rem 0.6rem 0;
+    border-bottom: 1px solid var(--ink);
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 0.75rem 0.9rem 0.75rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  tr td:last-child, tr th:last-child { padding-right: 0; }
+
+  .pill {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 0.2em 0.6em;
+    border-radius: 100px;
+    background: var(--accent-bg);
+    color: var(--accent);
+    white-space: nowrap;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--ink);
+    font-family: var(--display);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <span class="eyebrow">Deokgu &middot; 덕구</span>
+    <h1>Privacy Policy</h1>
+    <div class="dateline">
+      <span>Updated 19 November 2026</span>
+      <span>Version 2.0</span>
+      <span>App ID <code>com.stylefree.deokgu</code></span>
+    </div>
+    <hr class="rule-heavy">
+  </header>
+
+  <div class="glance">
+    <h2>At a glance</h2>
+    <div class="facts">
+      <div class="fact">
+        <span class="mark">1</span>
+        <p>What the Accessibility Service sees and your usage times <strong>stay on your device</strong>. They are never sent to us, to Google, or to anyone else.</p>
+      </div>
+      <div class="fact">
+        <span class="mark">2</span>
+        <p>Deokgu uses the Accessibility Service <strong>only</strong> to tell which app and screen is in front of you, so it knows when to send the ducks.</p>
+      </div>
+      <div class="fact">
+        <span class="mark">3</span>
+        <p>Deokgu shows <strong>ads from Google AdMob</strong> inside its own screens. To do that, Google's ads SDK collects the device's advertising ID and similar technical data. Section 5 explains what, why, and your choices.</p>
+      </div>
+      <div class="fact">
+        <span class="mark">4</span>
+        <p>You can <strong>remove all ads with a one-time purchase</strong> through Google Play. We have no account system, no server, and no analytics of our own.</p>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <h2 class="sec"><span class="num">01</span> What Deokgu is</h2>
+    <p>Deokgu is a screen-time app. You choose which apps distract you and set a time limit, either a number of minutes per hour or a daily limit for each app. When you go over the limit, a swarm of cartoon ducks covers the screen until you leave the app.</p>
+    <p>For that to work, Deokgu has to know which app you are using right now. That is the entire reason it asks for the permissions below.</p>
+  </section>
+
+  <section>
+    <h2 class="sec"><span class="num">02</span> The Accessibility Service</h2>
+    <p>Deokgu registers an Android Accessibility Service. We want to be specific about what that does, because it is a powerful permission and you deserve to know exactly how it is used.</p>
+
+    <h3>What it reads</h3>
+    <ul>
+      <li><strong>The package name of the app in the foreground</strong> — for example <code>com.google.android.youtube</code>. This is how Deokgu starts and stops your timer.</li>
+      <li><strong>Navigation labels on the current screen</strong> — only when you have turned on a partial mode such as "Shorts only" or "Reels only". Deokgu looks for the selected tab label to tell a short-video feed apart from a normal feed.</li>
+    </ul>
+
+    <h3>What happens to it</h3>
+    <p>Screen text is examined the moment it appears and then discarded. It is never written to storage, never added to a log, and never transmitted. The app's internet access is used only by the Google ads and Google Play billing components described in sections 5 and 6. The Accessibility Service code makes no network requests, and nothing it reads is passed to those components.</p>
+
+    <h3>What it never does</h3>
+    <ul>
+      <li>It does not read or store the content of messages, posts, emails, or documents.</li>
+      <li>It does not capture passwords, payment details, or anything you type.</li>
+      <li>It does not take screenshots or record your screen.</li>
+      <li>It does not build a profile of you or track you across apps.</li>
+      <li>It does not show ads. Ads appear only inside Deokgu's own screens, never on top of other apps and never in the duck overlay.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="sec"><span class="num">03</span> Permissions and why</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Why Deokgu needs it</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="pill">Accessibility</span></td>
+            <td>Detect which app and screen is in front of you, so the timer and the ducks fire at the right moment.</td>
+          </tr>
+          <tr>
+            <td><span class="pill">Display over other apps</span></td>
+            <td>Draw the duck swarm on top of the app you are trying to leave.</td>
+          </tr>
+          <tr>
+            <td><span class="pill">Internet</span></td>
+            <td>Load ads and the consent message from Google, and talk to Google Play for the remove-ads purchase. Nothing else uses the network.</td>
+          </tr>
+          <tr>
+            <td><span class="pill">Advertising ID</span></td>
+            <td>Lets Google's ads SDK read the device's resettable advertising ID to serve and measure ads.</td>
+          </tr>
+          <tr>
+            <td><span class="pill">Billing</span></td>
+            <td>Lets you buy "Remove ads" through Google Play.</td>
+          </tr>
+          <tr>
+            <td><span class="pill">Query installed apps</span></td>
+            <td>Show you a list of your launchable apps so you can pick which ones to limit. Deokgu requests only the launcher-visible list, not the broad <code>QUERY_ALL_PACKAGES</code> permission.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Deokgu does not request camera, microphone, contacts, location, or storage access.</p>
+  </section>
+
+  <section>
+    <h2 class="sec"><span class="num">04</span> What is stored, and where</h2>
+    <p>Everything Deokgu saves lives in its own private storage on your device:</p>
+    <ul>
+      <li>Which apps you chose to limit, and your hourly and daily limits.</li>
+      <li>How many seconds you have used each app this hour and on each of the last 15 days. Older days are deleted automatically.</li>
+      <li>Your duck's level, EXP, resist count, and daily streak.</li>
+      <li>Your settings: language, theme, quack sound, volume.</li>
+      <li>Whether "Remove ads" has been purchased on this device.</li>
+    </ul>
+    <p>No account is required. There is no sign-up, no user ID of ours, and no server of ours. This data is never sent off the device, including to the ads SDK. Uninstalling Deokgu deletes all of it.</p>
+  </section>
+
+  <section>
+    <h2 class="sec"><span class="num">05</span> Ads</h2>
+    <div class="callout">
+      <span class="label">The case where data leaves your device</span>
+      <p>Deokgu shows ads using the <strong>Google Mobile Ads SDK (AdMob)</strong>. When an ad is requested, that SDK sends technical data from your device directly to Google. This is the only data that leaves your device because of Deokgu, apart from a purchase you choose to make (section 6).</p>
+    </div>
+
+    <h3>Where ads appear</h3>
+    <ul>
+      <li>A rewarded video when you choose "5 more minutes" on a locked app, or when you raise a limit or stop guarding an app. You always choose to watch it first.</li>
+      <li>A banner at the bottom of the History tab.</li>
+    </ul>
+    <p>Ads are never shown on top of other apps, in the duck overlay, on the home tab, in settings, or during onboarding.</p>
+
+    <h3>What Google's ads SDK collects</h3>
+    <ul>
+      <li><strong>Device or other IDs</strong>: the Android advertising ID and the app set ID.</li>
+      <li><strong>IP address</strong>, which can be used to estimate your general location (such as country or city).</li>
+      <li><strong>Ad interactions</strong>: which ads were shown, viewed, or tapped inside Deokgu.</li>
+      <li><strong>Diagnostics</strong>: technical information about how the ads SDK performs, such as load times and errors.</li>
+    </ul>
+    <p>Google uses this for advertising, ad measurement, analytics of ad performance, and fraud prevention. Google acts as a processor or as an independent controller of this data depending on the product and the law that applies to you. See <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">How Google uses information from apps that use its services</a> and <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
+    <p>Deokgu itself does not read, store, or receive this data. Deokgu never gives the ads SDK anything the Accessibility Service has seen, the list of apps you limit, or your usage times.</p>
+
+    <h3>Consent and your choices</h3>
+    <ul>
+      <li>In the European Economic Area, the United Kingdom, Switzerland, and other regions where it is required, Deokgu shows Google's consent message when the app first opens. No ad is requested until you have made a choice. You can change it any time under <strong>Settings → Ads → Ad privacy settings</strong>.</li>
+      <li>You can reset or delete your advertising ID, or turn off ad personalization, in Android under <strong>Settings → Google → Ads</strong> (the exact path depends on your device).</li>
+      <li>You can remove ads completely with the one-time "Remove ads" purchase. After that, the app does not load ads or the consent message.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="sec"><span class="num">06</span> Purchases</h2>
+    <p>"Remove ads" is a one-time in-app purchase handled entirely by <strong>Google Play Billing</strong>. Payment details are entered in Google Play, not in Deokgu, and we never see your card number, name, or email address.</p>
+    <p>Deokgu asks Google Play whether this Google account owns the purchase and stores the yes-or-no answer on the device so ads stay off. We keep no purchase records on any server. Google's handling of your payment is covered by <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
+  </section>
+
+  <section>
+    <h2 class="sec"><span class="num">07</span> Backup</h2>
+    <p>Android's automatic cloud backup is <strong>turned off</strong> for Deokgu, so the operating system does not copy your settings or usage times to a Google account.</p>
+    <p>If you want to move your duck to a new phone, the Settings tab can create a backup code containing your level, EXP, and streak. The code is shown on screen for you to copy and keep yourself. It is not sent anywhere.</p>
+  </section>
+
+  <section>
+    <h2 class="sec"><span class="num">08</span> Sharing and selling</h2>
+    <p>We do not sell your data, and we do not hold any of it on a server.</p>
+    <p>The only third parties involved are Google's Mobile Ads SDK with its consent component (section 5) and Google Play Billing (section 6). There are no other advertising networks, no analytics providers, and no other third-party SDKs that collect data.</p>
+  </section>
+
+  <section>
+    <h2 class="sec"><span class="num">09</span> Children</h2>
+    <p>Deokgu is not directed at children under 13, or under the age required to consent to data processing in your country, and we do not knowingly collect personal information from children. If you believe a child is using Deokgu, the advertising ID can be deleted in Android settings as described in section 5.</p>
+  </section>
+
+  <section>
+    <h2 class="sec"><span class="num">10</span> Your rights</h2>
+    <p>Under regulations such as the GDPR and CCPA you have rights to access, correct, and delete personal data held about you. Deokgu's own data is only on your device: uninstalling the app, or clearing its storage in Android settings, erases it.</p>
+    <p>For the advertising data described in section 5, you can withdraw or change consent in the app (where a consent message applies), reset or delete your advertising ID in Android settings, and exercise your rights with Google through <a href="https://myadcenter.google.com/" rel="noopener noreferrer">My Ad Center</a> and Google's privacy tools. If you write to us at the address below, we will help you find the right place.</p>
+  </section>
+
+  <section>
+    <h2 class="sec"><span class="num">11</span> Changes</h2>
+    <p>If this policy changes in a way that affects how your data is handled, the date at the top will be updated and the revised policy will be published at this address before the change takes effect in a released version of the app.</p>
+  </section>
+
+  <section>
+    <h2 class="sec"><span class="num">12</span> Contact</h2>
+    <p>Questions about this policy or how Deokgu handles data:</p>
+    <p><a href="mailto:tmdfoqhdl030@gmail.com">tmdfoqhdl030@gmail.com</a></p>
+  </section>
+
+  <footer>
+    Deokgu &middot; com.stylefree.deokgu &middot; Updated 19 November 2026
+  </footer>
+
+</div>
